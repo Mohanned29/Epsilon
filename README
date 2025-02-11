@@ -20,12 +20,63 @@ This summary covers the key findings from a 2018 research paper that demonstrate
    - Communication protocols
 
 2. Data Sources:
-   - Drive data (real-time from CNC)
-   - I/O signals (from machine PLC)
-   - Vibrational data (frequency domain analysis)
-   - Machine conditions monitoring
-   - Maintenance/repair history
-   - Fault history
+   - Drive data (real-time from CNC) :
+        This comes from the Computer Numerical Control (CNC) system
+        Think of it as the "brain" of the machine that controls its movements
+        It collects real-time information like:
+        - Spindle speed (how fast the cutting tool is rotating)
+        - Tool position (where exactly the cutting tool is)
+        - Power consumption
+        - Movement speeds
+
+
+   - I/O signals (from machine PLC) :
+        These signals show:
+        - When buttons are pressed
+        - When sensors are triggered
+        - When safety systems activate
+        - When different machine parts turn on/off
+
+
+   - Vibrational data (frequency domain analysis) :
+        Uses accelerometers to measure how much the machine vibrates
+        Very important because unusual vibrations often mean problems
+        Can detect:
+
+        - Unbalanced parts
+        - Worn bearings
+        - Misalignments
+        - Tool wear
+
+
+   - Machine conditions monitoring :
+        Tracks the overall state of the machine
+        Includes things like:
+        - Temperature readings
+        - Oil levels
+        - Pressure readings
+        - Operating speed
+        - Working environment conditions
+
+
+   - Maintenance/repair history :
+        Historical record of all maintenance work done on the machine , Includes:
+        - Regular maintenance dates
+        - Parts that were replaced
+        - Repairs that were made
+        - Who did the work
+        - How long repairs took
+
+
+   - Fault history :
+        Record of previous problems and breakdowns , Contains:
+        - What went wrong
+        - When it happened
+        - How serious it was
+        - How it was fixed
+        - How long the machine was down
+
+
 
 ### Machine Learning Implementation
 
@@ -36,12 +87,12 @@ This summary covers the key findings from a 2018 research paper that demonstrate
 - Achieved 95% overall accuracy in predicting rotor states
 
 #### Performance Metrics:
-- Overall Accuracy: 0.95
-- Average Accuracy: 0.92
+- Overall Accuracy: 0.95            (95% correct)
+- Average Accuracy: 0.92            (This is the average accuracy across different categories of predictions)
 - Micro-Averaged Precision: 0.94
 - Macro-Averaged Precision: 0.93
-- Micro-Averaged Recall: 0.95
-- Macro-Averaged Recall: 0.94
+- Micro-Averaged Recall: 0.95     ( hkem 95% of the problems) ( micro : all categories kifkif)
+- Macro-Averaged Recall: 0.94     ( hkem 94% of the problems) ( macro : every categorie whdha)
 
 ## Implementation Requirements
 
